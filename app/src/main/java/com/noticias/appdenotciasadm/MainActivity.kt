@@ -40,7 +40,15 @@ class MainActivity : AppCompatActivity() {
             .set(data).addOnCompleteListener{ task ->
                 if(task.isSuccessful){
                     Toast.makeText(this,"Notícia enviada com sucesso", Toast.LENGTH_SHORT).show()
+                    clearFields()
                 }
             }
+    }
+
+    private fun clearFields() {
+        binding.editDate.setText("")
+        binding.editNews.setText("")
+        binding.editTitle.setText("")
+        binding.editWriter.setText("")
     }
 }
