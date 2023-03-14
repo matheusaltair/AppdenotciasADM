@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnSendNews.setOnClickListener {
             val title = binding.editTitle.text.toString()
-            val news = binding.editNews.text.toString()
+            val news = binding.editNews.text.toString() 
             val date = binding.editDate.text.toString()
             val writer = binding.editWriter.text.toString()
 
